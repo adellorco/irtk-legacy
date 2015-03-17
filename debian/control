@@ -8,10 +8,14 @@ Build-Depends:
  freeglut3-dev,
  libboost-dev,
  libfltk-dev,
+ libfontconfig1-dev,
  libgsl0-dev,
+ libjpeg-dev,
  libpng-dev,
  libtbb-dev,
+ libxft-dev,
  libxi-dev,
+ libxinerama-dev,
  libxmu-dev,
  zlib1g-dev
 Standards-Version: 3.9.5
