@@ -5,6 +5,7 @@ Uploaders: Ghislain Antony Vaillant <ghisvail@gmail.com>
 Build-Depends:
  cmake (>= 2.6),
  debhelper (>= 9),
+ doxygen,
  freeglut3-dev,
  libboost-dev,
  libfltk-dev,
