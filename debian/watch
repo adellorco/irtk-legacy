@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/irtk-$1\.tar\.gz/ \
+  https://github.com/BioMedIA/IRTK/tags .*/v?(\d\S*)\.tar\.gz
