@@ -8,7 +8,7 @@ Build-Depends:
  doxygen,
  freeglut3-dev,
  libboost-dev,
- libfltk-dev,
+ libfltk1.3-dev,
  libfontconfig1-dev,
  libgsl0-dev,
  libjpeg-dev,
