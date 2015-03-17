@@ -4,7 +4,16 @@ Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.
 Uploaders: Ghislain Antony Vaillant <ghisvail@gmail.com>
 Build-Depends:
  cmake (>= 2.6),
- debhelper (>= 9)
+ debhelper (>= 9),
+ freeglut3-dev,
+ libboost-dev,
+ libfltk-dev,
+ libgsl0-dev,
+ libpng-dev,
+ libtbb-dev,
+ libxi-dev,
+ libxmu-dev,
+ zlib1g-dev
 Standards-Version: 3.9.5
 Section: science
 Homepage: https://github.com/BioMedIA/IRTK
