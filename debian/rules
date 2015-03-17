@@ -14,7 +14,7 @@ override_dh_auto_configure:
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DBUILD_CARDIAC=OFF \
 		-DBUILD_CONDOR_EXE=OFF \
-		-DBUILD_DOCUMENTATION \
+		-DBUILD_DOCUMENTATION=ON \
 		-DBUILD_TESTS=OFF \
 		-DBUILD_WITH_NIFTI=OFF \
 		-DBUILD_WITH_OPENCV=OFF \
@@ -23,6 +23,11 @@ override_dh_auto_configure:
 		-DBUILD_WITH_VTK=OFF \
 		-DWRAP_CYTHON=OFF \
 		-DWRAP_PYTHON=OFF
+
+override_dh_auto_build:
+		dh_auto_build
+		# Make doxygen documentation
+		cd $(BUILDDIR) && $(MAKE) doc
 
 override_dh_auto_clean:
 	dh_auto_clean
