@@ -12,9 +12,17 @@ BUILDDIR = $(CURDIR)/debian/build
 override_dh_auto_configure:
 	dh_auto_configure -- \
 		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DBUILD_CARDIAC=OFF \
+		-DBUILD_CONDOR_EXE=OFF \
+		-DBUILD_DOCUMENTATION \
+		-DBUILD_TESTS=OFF \
 		-DBUILD_WITH_NIFTI=OFF \
+		-DBUILD_WITH_OPENCV=OFF \
+		-DBUILD_WITH_PNG=ON \
 		-DBUILD_WITH_TBB=ON \
-		-DBUILD_TESTS=OFF
+		-DBUILD_WITH_VTK=OFF \
+		-DWRAP_CYTHON=OFF \
+		-DWRAP_PYTHON=OFF
 
 override_dh_auto_clean:
 	dh_auto_clean
