@@ -36,6 +36,7 @@ Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
 
 Package: irtk-doc
+Section: doc
 Architecture: all
 Depends:
  ${misc:Depends}
