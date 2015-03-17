@@ -24,7 +24,8 @@ BUILDDIR = $(CURDIR)/debian/build
 override_dh_auto_configure:
 	dh_auto_configure -- \
 		-DCMAKE_INSTALL_PREFIX=/usr \
-		-DBUILD_WITH_TBB=ON
+		-DBUILD_WITH_TBB=ON \
+		-DBUILD_TESTS=OFF
 
 override_dh_auto_clean:
 	dh_auto_clean
