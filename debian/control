@@ -32,16 +32,20 @@ Depends:
  ${shlibs:Depends}
 Suggests:
  irtk-doc
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Binaries for ITK
+ The Image Registration Toolkit
+ .
+ This package provides the binaries.
 
 Package: irtk-doc
 Section: doc
 Architecture: all
 Depends:
  ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Documentation for ITK
+ The Image Registration Toolkit
+ .
+ This package provides the documentation.
 
 #Package: libirtk1
 #Section: libs
