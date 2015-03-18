@@ -28,19 +28,19 @@ override_dh_auto_configure:
 		-DWRAP_PYTHON=OFF
 
 override_dh_auto_build:
-		dh_auto_build
-		# Generate debhelper .install file to install the IRTK 
-		# executables to a private versioned location.
-		touch debian/irtk$(IRTK_MAJOR_VERSION).install
-		echo "/usr/bin/* /usr/lib/irtk$(IRTK_MAJOR_VERSION)" > debian/irtk$(IRTK_MAJOR_VERSION).install	
-		# Generate debhelper .links file to create the versioned 
-		# symlinks to the IRTK executables.
-		for f in $$(find $(BUILDDIR)/bin \! -type d | sort); do \
-				bname=$$(basename $$f); \
-				echo "/usr/lib/irtk$(IRTK_MAJOR_VERSION)/$$bname /usr/bin/irtk$(IRTK_MAJOR_VERSION)-$$bname" >> debian/irtk$(IRTK_MAJOR_VERSION).links; \
-		done
-		# Make doxygen documentation
-		cd $(BUILDDIR) && $(MAKE) doc
+	dh_auto_build
+	# Generate debhelper .install file to install the IRTK 
+	# executables to a private versioned location.
+	touch debian/irtk$(IRTK_MAJOR_VERSION).install
+	echo "/usr/bin/* /usr/lib/irtk$(IRTK_MAJOR_VERSION)" > debian/irtk$(IRTK_MAJOR_VERSION).install	
+	# Generate debhelper .links file to create the versioned 
+	# symlinks to the IRTK executables.
+	for f in $$(find $(BUILDDIR)/bin \! -type d | sort); do \
+		bname=$$(basename $$f); \
+		echo "/usr/lib/irtk$(IRTK_MAJOR_VERSION)/$$bname /usr/bin/irtk-$$bname" >> debian/irtk$(IRTK_MAJOR_VERSION).links; \
+	done
+	# Make doxygen documentation
+	cd $(BUILDDIR) && $(MAKE) doc
 
 override_dh_auto_clean:
 	dh_auto_clean
