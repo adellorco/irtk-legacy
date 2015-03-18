@@ -28,7 +28,7 @@ override_dh_auto_build:
 		dh_auto_build
 		# Generate debhelper file to create symlinks for all 
 		# relevant ITK binaries
-		for f in $$(find \! -type d | sort); do \
+		for f in $$(find $(BUILDDIR)/bin \! -type d | sort); do \
 				bname=$$(basename $$f); \
 				echo "/usr/lib/irtk/$$bname /usr/bin/irtk-$$bname" >> debian/irtk.links; \
 		done
