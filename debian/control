@@ -47,22 +47,3 @@ Description: Documentation for ITK
  The Image Registration Toolkit
  .
  This package provides the documentation.
-
-#Package: libirtk1
-#Section: libs
-#Architecture: any
-#Depends:
-# ${misc:Depends},
-# ${shlibs:Depends}
-#Description: <insert up to 60 chars description>
-# <insert long description, indented with spaces>
-
-#Package: libirtk1-dev
-#Section: libdevel
-#Architecture: any
-#Depends:
-# libirtk1 (= ${binary:Version}),
-# ${misc:Depends}
-#Description: <insert up to 60 chars description>
-# <insert long description, indented with spaces>
-
