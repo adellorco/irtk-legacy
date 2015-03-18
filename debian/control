@@ -26,19 +26,19 @@ Homepage: https://github.com/BioMedIA/IRTK
 Vcs-Git: git://anonscm.debian.org/debian-med/irtk.git 
 Vcs-Browser: https://anonscm.debian.org/cgit/debian-med/irtk.git
 
-Package: irtk1.0
+Package: irtk
 Architecture: any
 Depends:
  ${misc:Depends},
  ${shlibs:Depends}
 Suggests:
- irtk1.0-doc
+ irtk-doc
 Description: Binaries for ITK
  The Image Registration Toolkit
  .
  This package provides the binaries.
 
-Package: irtk1.0-doc
+Package: irtk-doc
 Section: doc
 Architecture: all
 Depends:

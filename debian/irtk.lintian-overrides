@@ -1,2 +1,2 @@
 # Upstream does not provide manpages
-irtk1.0: binary-without-manpage
+irtk: binary-without-manpage

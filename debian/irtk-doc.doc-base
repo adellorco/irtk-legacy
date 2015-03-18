@@ -1,0 +1,9 @@
+Document: irtk-doc
+Title: The IRTK documentation
+Author: The IRTK developers
+Abstract: Documentation for the IRTK software suite.
+Section: Science/Data Analysis
+
+Format: HTML
+Index: /usr/share/doc/irtk-doc/html/index.html
+Files: /usr/share/doc/irtk-doc/html/*.html
